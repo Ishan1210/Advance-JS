@@ -77,11 +77,72 @@
 //RETURNING FUNCTION VALUES
 
 
-function addTwoNumbers(x,y){
-    return x+y; }
-let resultArr=[];
-for(let i=0; i<10; i++){
-    let result=addTwoNumbers(i,2*i);
-    resultArr.push(result);}
+// function addTwoNumbers(x,y){
+//     return x+y; }
+// let resultArr=[];
+// for(let i=0; i<10; i++){
+//     let result=addTwoNumbers(i,2*i);
+//     resultArr.push(result);}
         
-console.log(resultArr);
+// console.log(resultArr);
+
+// RETURNING WITH ARROW FUNCTION
+
+// let addTwoNumbers=(x,y) => x+y; 
+// let result = addTwoNumbers(5,3);
+// console.log(result);
+
+// let addTwoNumbers=(x,y) => {
+//     console.log("Adding.....");
+//     return x+y;     
+// }
+
+//SCOPE
+
+// function testAvailibility(x){
+//     console.log("Available here:", x);  
+// }
+// testAvailibility("hi there!");
+// console.log("Not available here:", x);
+
+// function testAvailibility(y){
+//     let y="Local Variable";
+//     console.log("Available here:", y);
+// }
+// testAvailibility();
+// console.log("Not available here:", y);  
+
+// function doingstuff(){
+//     if(true){
+//         console.log(x);
+//         var x="local";
+//     }
+// }
+// doingstuff();
+
+// function doingstuff(){
+//     if(true){
+//         console.log(x);
+//         let x="local";
+//     }
+// }
+// doingstuff();
+
+// GLOBAL VARIABLE
+
+// let globalVar="Accessible everywhere"
+// console.log("Outside function",globalVar);
+
+// function doingstuff(){
+//     console.log("Inside function",globalVar);
+// }
+// doingstuff();
+
+let x="global";
+
+function doingstuff(){
+    let x="local";
+    console.log("Inside function",x);
+}   
+doingstuff();
+console.log("Outside function",x);
