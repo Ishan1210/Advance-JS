@@ -138,11 +138,84 @@
 // }
 // doingstuff();
 
-let x="global";
+// let x="global";
 
-function doingstuff(){
-    let x="local";
-    console.log("Inside function",x);
-}   
-doingstuff();
-console.log("Outside function",x);
+// function doingstuff(){
+//     let x="local";
+//     console.log("Inside function",x);
+// }   
+// doingstuff();
+// console.log("Outside function",x);
+
+// IIFE - Immediately Invoked Function Expression
+
+// (function (){
+//     console.log("IIFE");
+// })
+// ();
+
+//Recursive functions
+
+// function getRecursive(nr){
+//     console.log(nr);
+//     getRecursive(--nr);
+//     }
+// getRecursive(5);
+
+// function getRecursive(nr){
+//         console.log(nr);
+//         if(nr > 0){
+//            getRecursive(--nr);}
+// }getRecursive(5);
+
+// function logrecursive(nr){
+//     console.log(nr);
+//     if(nr > 0){
+//         logrecursive(nr-1);
+//     }else{
+//         console.log("End of recursion");
+//     }
+//     console.log(nr);
+// }
+// logrecursive(5);
+
+//Iteration is better than recursion
+
+//Nested functions
+
+// function doOuterFunctionStuff(nr){
+//     console.log("Outer function", nr);
+//     doInnerFunctionStuff(nr);
+//     function doInnerFunctionStuff(x){
+//         console.log("Inner function", x+7);
+//     console.log("Inner function", nr);
+//     }
+// }
+
+// let functionvariable = function() {
+//     console.log("I am a function variable");
+// }
+// functionvariable();
+// doflexibleStuff = function() {
+//     console.log("I am a flexible function variable");
+// }
+
+// let youGotIt = function() { 
+//     console.log("You got it!");
+// };
+// setTimeout(youGotIt, 2000);
+
+//SET Interval
+
+// let interval = setInterval(function() {
+//     console.log("hi there!");
+// }
+// , 1000);  
+
+// (function()){
+//     console.log("IIFE");
+//  }();
+
+
+
+
