@@ -38,20 +38,97 @@
 // METHODS:
 // Methods are functions that belong to an object.
 
-class Person{
-    constructor(firstname, lastname) {
-        this.firstname = firstname;
-        this.lastname = lastname;
-    }
-    greet() {
-        console.log("Hello", this.firstname, this.lastname);
-    }
-    compliment(name,object){
-        return "That's a wonderful " + object + " " + name + "!";
-    }
+// class Person{
+//     constructor(firstname, lastname) {
+//         this.firstname = firstname;
+//         this.lastname = lastname;
+//     }
+//     greet() {
+//         console.log("Hello", this.firstname, this.lastname);
+//     }
+//     compliment(name,object){
+//         return "That's a wonderful " + object + " " + name + "!";
+//     }
+// }
+// let person1=new Person("Ishan", "Grover");
+// let compliment=person1.compliment("Ishan", "car");
+// console.log(compliment);
+// person1.greet();
+
+
+// class Person{
+//     constructor(firstname, lastname) {
+//         this.#firstname = firstname;
+//         this.#lastname = lastname;
+//     }
+// }
+// let person1=new Person("Ishan", "Grover");
+// console.log(person1.firstname); 
+
+// class Person{
+//     constructor(firstname, lastname) {
+//         if(firstname.startsWith("I")){
+//             this.firstname = firstname;
+//         }
+//         else{
+//             this.#firstname="Mr. "+firstname;
+//         }
+        
+//         this.lastname = lastname;
+//     }
+// }
+// let person1=new Person("Ishan", "Grover");
+// console.log(person1.firstname);
+
+// class Person{
+//     constructor(firstname, lastname) {
+//         this.#firstname = firstname;
+//         this.#lastname = lastname;
+//     }
+//     get firstname() {
+//         return this.#firstname;
+//     }
+//     set firstname(value) {
+//         this.#firstname = firstname;
+//     }
+//     get lastname() {
+//         return this.#lastname;
+//     }
+//     set lastname(value) {
+//         this.#lastname = lastname;
+//     }
+// }
+// let person1=new Person("Ishan", "Grover");
+// console.log(person1.firstname);
+
+// class vehicle{
+//     constructor(make, model, year) {
+//         this.make = make;
+//         this.model = model;
+//         this.year = year;
+//     }
+    
+//     }
+
+// class Motorcycle extends vehicle{
+//     constructor(make, model, year, type) {
+//         super(make, model, year);
+//         this.type = type;
+//     }
+//     doWheelie() {
+//         console.log("Doing a wheelie!");
+//     }
+// }
+// let motorcycle1 = new Motorcycle("Yamaha", "YZF-R3", 2020, "Sport");
+// console.log(motorcycle1.make); 
+// motorcycle1.doWheelie(); 
+
+//We cannot access private members of a parent class in a child class.
+
+personalbar.prototype.intoduce= function(){
+    console.log("Hello, my name is " + this.firstname + " " + this.lastname + ".");
 }
-let person1=new Person("Ishan", "Grover");
-let compliment=person1.compliment("Ishan", "car");
-console.log(compliment);
-person1.greet();
+ let person1=new Person("Ishan", "Grover");
+ person1.intoduce();
+
 
