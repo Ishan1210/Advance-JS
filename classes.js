@@ -125,10 +125,27 @@
 
 //We cannot access private members of a parent class in a child class.
 
-personalbar.prototype.intoduce= function(){
-    console.log("Hello, my name is " + this.firstname + " " + this.lastname + ".");
-}
- let person1=new Person("Ishan", "Grover");
- person1.intoduce();
+// personalbar.prototype.intoduce= function(){
+//     console.log("Hello, my name is " + this.firstname + " " + this.lastname + ".");
+// }
+//  let person1=new Person("Ishan", "Grover");
+//  person1.intoduce();
+
+//PROTOTYPES
+
+// class Person{
+//     constructor(firstname, lastname) {
+//         this.firstname = firstname;
+//         this.lastname = lastname;
+//     } }
+// Person.prototype.intoduce= function(){
+//     console.log("Hello, my name is " + this.firstname + " " + this.lastname + ".");
+// };
+// let person1=new Person("Ishan", "Grover");
+// person1.intoduce();
+// Person.prototype.favouriteColor="blue";
+// console.log(person1.favouriteColor);
+
+
 
 
